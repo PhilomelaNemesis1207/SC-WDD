@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - FashionTrend</title>
+    <link rel="stylesheet" href="/Style.Css">
+</head>
+<body>
+    <header>
+        <div class="logo">FashionTrend</div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Register.html">Register</a></li>
+                <li><a href="/Login.html">Login</a></li>
+                <li><a href="/Contact.html">Contact</a></li>
+                <li><a href="/Profile.html">Profile</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cart">
+        <h2>Your Shopping Cart</h2>
+        
+        <div class="cart-item">
+            <img src="/path-to-image.jpg" alt="Product Image">
+            <div class="item-details">
+                <h3>Striped knitted cardigan</h3>
+                <p>Color: Ecru White</p>
+                <p>Size: M</p>
+                <p>Price: $50</p>
+                <input type="number" value="1" min="1" class="quantity">
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Total: $50</h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FashionTrend. All Rights Reserved.</p>
+    </footer>
+    <script src="/Validation.js"></script>
+</body>
+</html>

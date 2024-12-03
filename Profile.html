@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - FashionTrend</title>
+    <link rel="stylesheet" href="/Style.Css">
+</head>
+<body>
+    <header>
+        <div class="logo">FashionTrend</div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Register.html">Register</a></li>
+                <li><a href="/Login.html">Login</a></li>
+                <li><a href="/Contact.html">Contact</a></li>
+                <li><a href="/MyCart.html">My Cart</a></li>
+                <li><a href="/Profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile">
+        <h2>Your Profile</h2>
+        
+        <div class="profile-info">
+            <p><strong>Full Name:</strong> Philomela Nemesis</p>
+            <p><strong>Email:</strong> Philomela123@gmail.com</p>
+            <p><strong>Phone Number:</strong> +123 456 789</p>
+            <p><strong>Shipping Address:</strong> 123 Fashion Street, New York, NY</p>
+        </div>
+
+        <button class="edit-btn" onclick="toggleEditForm()">Edit Profile</button>
+        
+        <div id="edit-form" class="edit-form" style="display: none;">
+            <form action="#" onsubmit="updateProfile(event)">
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" value="Philomela Nemesis" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" value="Philomela123@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" value="+123 456 789" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Shipping Address:</label>
+                    <textarea id="address" name="address" required>123 Fashion Street, New York, NY</textarea>
+                </div>
+                <button type="submit" class="btn">Save Changes</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FashionTrend. All Rights Reserved.</p>
+    </footer>
+    <script src="/Validation.js"></script>
+</body>
+</html>
